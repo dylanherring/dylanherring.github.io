@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+<!--
+ .tab { margin-left: 40px; }
+-->
+body{background-color: #474a59;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a{color:#eb830c;}
+.headerColor{
+border: 3px solid #eb830c;
+height: 50px;
+width:20%;
+}
+.imgCenter{
+
+  margin: auto;
+  padding: 10px;
+  width:50%
+
+}
+.center {
+  margin: auto;
+  border: 3px solid #eb830c;
+  padding: 10px;
+  width:50%
+}
+div{
+  align-content: center;
+  }
+</style>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+	<title> Essay Page </title>
+
+  <script type="text/javascript">
+  function changeImage() {
+          var image = document.getElementById('imgClickAndChange');
+          if (image.getAttribute("src")== "starwars.png")
+         {
+             image.setAttribute("src","main.png");
+         }
+         else
+         {
+             image.setAttribute("src", "starwars.png");
+         }
+     }
+     function changeImage2() {
+             var image = document.getElementById('imgClickAndChange2');
+             if (image.getAttribute("src")== "startrek.png")
+            {
+                image.setAttribute("src","stargate.png");
+            }
+            else
+            {
+                image.setAttribute("src", "startrek.png");
+            }
+        }
+  </script>
+
+</head>
+
+<body>
+
+<header class="headerColor">
+	Click
+	<a href="index.html">Here</a>
+	to return to index.html.
+	<p>
+</header>
+<section class="center">
+		<h1>Weekly Assginment 4</h1>
+    <div>
+			<p class="tab" style="text-indent: 40px">Star Wars is a well known Sci-fi Movie franchise. Star Trek is a well known Sci-fi Tv Show franchise. However, my favorite Sci-fi show franchise is actually Stargate. All three of these visual multimedia franchises are a Star-something. I believe however that of the three, Star Wars is the least beloved by Sci-fi fans, even though it is the most well known. I was unable to find a dataset that contained all or any of the filmography that I was searching for, so I created my own <a href="StargateVsShows.xlsx"><u>Excel spreadsheet</u></a> by collecting the reviews of each of the shows and movies I wanted to look at from IMDB and then compiling them into Excel and performing some averageing and creating graphics. Every claim made in this paper is based on the observations and graphs from this data. The graphs are provided in an interactive format at the bottom of this paper. For my own enjoyment, I also pulled in information about Farscape, and Firefly, two shows that are even less well known, but that are also shows that I have a great interest in.
+
+<p class="tab" style="text-indent: 40px">Star Wars is the lowest reviewed out of the “Big Three” Star-franchises, with an average rating of only 7.53 stars on IMDB, as determined by averageing the provided average stars for every movie using Excel. Feel free to check out the provided Excel Spreadsheet above to see how the average was computed. Star Wars was created in 1977, and has persisted to this day. Made up of an original trilogy, a prequel trilogy, and now several miscellaneous prequels and the skywalker/force awakens trilogy, Star Wars has by far the largest number of independent entries in the dataset that I created. Despite having a massive number of films, as well as a huge budget and cult following, Star Wars was somehow the least popular franchise according to IMDB reviews.
+
+<p class="tab" style="text-indent: 40px">Star Trek is the highest rated of the “Big Three” with a rating of 7.8 stars on IMDB, followed very closely by Stargate at 7.74 stars. Star Trek first appeared in 1966 as Star Trek: The Original Series. The Star Trek franchise now contains several movies and spin of shows such as Deep Space Nine, Voyager, and The Next Generation. Star Trek movies are still being made today. By comparison, the original movie, Stargate, came out in 1994 and led to the series SG-1 being released in 1997, and running until 2007. The Stargate Franchise contains several movies and two spin-off shows, SG Atlantis, and SG Universe. A new Stargate television show is in the works, meaning that the Stargate Franchise is still alive. Infact, all of the “Big Three” are still alive with fans everywhere.
+
+<p class="tab" style="text-indent: 40px">The more well known the Franchise, the more critical fans are. In the dataset I have created, you can see that the highest rated shows are Firefly with a rating of 8.4 stars, and Farscape with a rating of 8.2 stars. These two shows only have two entries, one show and one movie each. The total number of reviews was much lower for them than for any of the “Big Three”, yet they had a higher average rating. Star Wars had the highest number of reviews across all their productions, and also had the lowest star rating on average. This trend does not hold up for Star Trek, because there were a large number of reviews for Star Trek, and it still maintained a higher rating.
+
+<p class="tab" style="text-indent: 40px">The data that I collected and analysed shows that though Stargate is not the most popular of the big three, it is still very well reviewed. My data also reveals that Star Wars is the worst rated on average. This information does not surprise me, because Star wars has had some really bad movies that drag down their average rating. However, If we judge each series by its best rating, then the list becomes this:
+  <ol class="tab" style="text-indent: 40px">
+    <li><a href="https://www.imdb.com/title/tt0303461/">Firefly</a></li>
+    <li><a href="https://www.imdb.com/title/tt0080684/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=706e19a4-e4ad-4659-b087-ffc80ad81fcb&pf_rd_r=QYCW9J7K7AMMRFC1DZ6J&pf_rd_s=center-5&pf_rd_t=60601&pf_rd_i=star-wars&ref_=fea_sw_advs_t0">Star Wars episode V</a></li>
+    <li><a href="https://www.imdb.com/title/tt0092455/?ref_=fn_al_tt_1">Star trek: The Next Generation</a></li>
+    <li><a href="https://www.imdb.com/title/tt0118480/">Stargate SG-1</a></li>
+    <li><a href="https://www.imdb.com/title/tt0187636/?ref_=nv_sr_srsg_0">Farscape</a></li>
+  </ol> <p class="tab" style="text-indent: 40px">This demonstrates that the more media you have created, the more chances you have to screw up and make a really bad movie or series.
+    <p>Click the images below to view graphs</p>
+</div>
+
+<div style="text-align:center;">
+  <img id="imgClickAndChange" onclick="changeImage()" width="500px" src="main.png">
+  <img id="imgClickAndChange2" onclick="changeImage2()" width="500px" src="stargate.png">
+</div>
+
+</section>
+
+
+<!-- <section class="imgCenter">
+  <ul>Sources:
+	  <li><a href="https://www.upworthy.com/20-years-of-data-reveals-that-congress-doesnt-care-what-you-think"> Congress doesn't care what you think</a></li>
+	  <li><a href="https://www.visualcapitalist.com/the-rich-got-richer-during-covid-19-heres-how-american-billionaires-performed/"> Billionares wealth increase during covid</a></li>
+    <li><a href="https://www.shareable.net/wealth-inequality-in-america-its-worse-than-we-thought-video/"> Wealth inequality is worse than we though</a></li>
+    <li><iframe width="560" height="315" src="https://www.youtube.com/embed/QPKKQnijnsM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+
+  </ul>
+</section> -->
+
+</body>
+</html>

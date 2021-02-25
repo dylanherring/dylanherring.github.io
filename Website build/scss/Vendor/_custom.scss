@@ -1,0 +1,23 @@
+// Bootstrap overrides
+//
+// copy variables from _variables.scss to this file to override default values
+// without modifying source files
+// color I need: eb830c
+
+$orange:  #eb830c;
+$gray:    #474a59;
+$white:   #ffffff;
+$black: #1f1f1f;
+$primary:       $orange;
+//$navbar-dark-active-color: $orange;
+
+
+// scss-docs-end theme-color-variables
+$enable-rounded:     false;
+$enable-shadows: true;
+$enable-gradiants: true;
+
+$body-bg:                   $gray;
+$body-color:                $white;
+
+// Color system
