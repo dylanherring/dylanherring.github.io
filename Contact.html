@@ -15,12 +15,17 @@
       .navbar-custom{
         background-color: #343a40:
       }
+
+      .form-control:focus{
+        border-color: #eb830c;
+      }
     </style>
 
-      <script type="text/javascript">
-
-
-      </script>
+    <script type="text/javascript">
+    function showMessage(){
+      alert("This form is currently non-functional. Please try again later");
+    }
+  </script>
 
 
   <head>
@@ -107,7 +112,7 @@
           <p>Fill in the form below, or send an email to <span><a href="mailto:dylan.herring@colorado.edu">dylan.herring@colorado.edu</a></span></p>
         <div class="row">
             <div class="col-sm">
-              <row>
+              <form>
               <div class="col-sm">
                 <label for="First name">Name:</label>
                 <input type="text" class="form-control" placeholder="First name" aria-label="First name">
@@ -115,7 +120,6 @@
               <div class="col-sm">
                 <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
               </div>
-            </row>
               <div class="col">
                 <label for="Email">Email:</label>
                 <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Email">
@@ -124,10 +128,12 @@
                 <textarea maxlength="1000"style="margin: 0px 75px 10px 0px; width: 707px; height: 148px;" type="text" aria class="form-control" placeholder="Enter your message" aria-label="Message"></textarea>
               </div>
               <!-- <input type="submit" value="Submit" data-wait="Please wait..." class="form-submit w-button"> -->
-              <button class="btn btn-primary form-submit w-button" type="submit">Submit</button>
+              <button class="btn btn-primary form-submit w-button" onclick="showMessage()" type="submit">Submit</button>
+            </form>
             </div>
+
             <div class="col-sm">
-              <a href="https://www.linkedin.com/in/dylan-herring/"><img src="Linkedin_profile-removebg-preview.png" alt="Profile photo not avaliabe" class="img-fluid" style="position:fixed;
+              <a href="https://www.linkedin.com/in/dylan-herring/" target="_blank"><img src="Linkedin_profile-removebg-preview.png" alt="Profile photo not avaliabe" class="img-fluid" style="position:fixed;
                 bottom:0px;
                 left:60%;" ></a>
             </div>
