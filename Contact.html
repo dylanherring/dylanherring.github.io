@@ -80,7 +80,7 @@
 
 
   <!-- This is my navbar -->
-    <!-- <div class="container-fluid "> -->
+
       <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">Portfolio</a>
@@ -100,38 +100,38 @@
             </ul>
         </div>
       </nav>
-    <!-- </div> -->
   <!-- This is the end of the navbar -->
 
 
-<!-- Begining my introduction text -->
+<!-- Begining of fillable form -->
 
     <div style="text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px" class="container">
       <div class="row gx-4">
         <div class="col-sm"><p class="h1">Let's <span>Talk</span></div></p>
-          <p>Fill in the form below, or send an email to <span><a href="mailto:dylan.herring@colorado.edu">dylan.herring@colorado.edu</a></span> or visit my <span><a href="https://www.linkedin.com/in/dylan-herring/">Linkedin</a></span>.</p>
+          <p>Fill in the form below to send an email to <span><a href="mailto:dylan.herring@colorado.edu">dylan.herring@colorado.edu</a></span>. You can also visit my <span><a href="https://www.linkedin.com/in/dylan-herring/">Linkedin</a></span>!</p>
         <div class="row">
             <div class="col-sm">
-              <form>
+              <form method="POST" action="https://formspree.io/f/xqkgvwyo">
+                <!-- <input type="submit" value="Send"> -->
               <div class="col-sm">
                 <label for="First name">Name:</label>
-                <input type="text" class="form-control" style="color:black;" placeholder="First name" aria-label="First name">
+                <input type="text" class="form-control" style="color:black;" placeholder="First name" aria-label="First name" name="firstname">
               </div>
               <div class="col-sm">
-                <input type="text" class="form-control" style="color:black;" placeholder="Last name" aria-label="Last name">
+                <input type="text" class="form-control" style="color:black;" placeholder="Last name" aria-label="Last name" name="lastname">
               </div>
               <div class="col">
                 <label for="Email">Email:</label>
-                <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Email" style="color:black;">
+                <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Email" style="color:black;" name="email">
               </div>
               <div class="col"><label for="Message">Message</label>
-                <textarea maxlength="1000" style="margin: 0px 75px 10px 0px; width: 707px; height: 148px; color:black;" type="text" aria class="form-control" placeholder="Enter your message" aria-label="Message"></textarea>
+                <textarea maxlength="1000" style="margin: 0px 75px 10px 0px; width: 707px; height: 148px; color:black;" type="text" aria class="form-control" placeholder="Enter your message" aria-label="Message" name="Message"></textarea>
               </div>
               <!-- <input type="submit" value="Submit" data-wait="Please wait..." class="form-submit w-button"> -->
-              <button class="btn btn-primary form-submit w-button" onclick="showMessage()" type="submit">Submit</button>
+              <button class="btn btn-primary" type="submit" name="submit">Submit</button>
             </form>
             </div>
-
+<!-- end of form, beggining of image -->
             <div class="col-sm">
               <a href="https://www.linkedin.com/in/dylan-herring/" target="_blank"><img src="Linkedin_profile-removebg-preview.png" alt="Profile photo not avaliabe" class="img-fluid" style="position:fixed;
                 bottom:0px;
