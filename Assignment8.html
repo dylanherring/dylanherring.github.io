@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+      html{
+      height: 100%;
+    }
+      body{font-family: 'Quicksand', sans-serif;
+      margin: auto;
+      height: 100%;
+      background-image: linear-gradient(to bottom right, black,#474a59, black);
+    }
+      span{color: #eb830c;
+        text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;
+      }
+      .navbar-custom{
+        background-color: #343a40:
+      }
+    </style>
+
+      <script type="text/javascript">
+
+
+      </script>
+
+
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+<!-- jQuery library -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+<!-- Latest compiled JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <title>Projects</title>
+    </head>
+
+<!-- This is the end of the set up, and the beggining of the actuall website code -->
+
+<body>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
+
+
+
+    <!--Example of making a container based layout!
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">1</div>
+        <div class="col-sm">2</div>
+        <div class="col-sm">3</div>
+      </div>
+      <div class="row">
+        <div class="col-sm">1</div>
+        <div class="col-sm">2</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">Main content</div>
+        <div class="col-md-4">sidebar</div>
+      </div>
+    </div> -->
+
+  <!-- This is my navbar -->
+    <!-- <div class="container-fluid "> -->
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Dylan Herring</a>
+          <ul class="navbar-nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active"  href="index.html"  >Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="About.html" >About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Projects.html" aria-current="page"><u>Portfolio</u></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="Resume.html" >Resume</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="Contact.html" >Contact</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    <!-- </div> -->
+  <!-- This is the end of the navbar -->
+
+
+<!-- Begining my introduction text -->
+<div class="container">
+  <div class="row">
+  <a href="Assignment 8.html">Click Here for code file</a>
+  </div>
+</div>
+<br>
+<div class="containter">
+  <p><u>Conditional Probability of Citations and Arrests</u></p>
+   <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-89f5401a728ed1685ce51bfd7e52f21c"}, "mark": "bar", "encoding": {"x": {"type": "quantitative", "field": "Percent Probability"}, "y": {"type": "nominal", "field": "Probability of"}}, "height": 225, "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-89f5401a728ed1685ce51bfd7e52f21c": [{"Probability of": "getting arrested, & citation", "Percent Probability": 0.4694835680751174}, {"Probability of": "getting a citation & not getting arrested", "Percent Probability": 99.53051643192488}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script></div>
+
+<div class="containr">
+  <div class="row">
+    <p>The data in the linked file above and in the visualization show the conditional probability of getting a citation, given that you are either getting arrested or not getting arrested, based on probabilities from the data frame. We can see that the probability of getting arrested and a citation are very low. This could be in part because an arrestable offense means there is no need for a citation. On the other hand, if you are not arrested, but you are stopped by police in any fashion, there is a 99% probability of receiving some form of citation. This makes sense, because if you assume that the majority of police stops are done because of someone breaking the law, in situations where an arrest is not performed, the lesser punishment for breaking the law is going to be a citation. Whats interesting is that from the entire dataframe, the total number of (Arrest=True & Citation=True) events was a total of 5 out of 6365 stops. That is a really small number, which is reflected in the visualization. Another question i would like to ask in the future is, what is the relationship between arrests, citations, and the type of stop performed. Are vehicle stops more likely to end in an arrest, a citation, both, or neither? It's worth investigating further.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
